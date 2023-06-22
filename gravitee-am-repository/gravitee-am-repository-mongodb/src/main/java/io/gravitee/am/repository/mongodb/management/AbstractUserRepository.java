@@ -295,6 +295,8 @@ public abstract class AbstractUserRepository<T extends UserMongo> extends Abstra
         user.setType(userMongo.getType());
         user.setTitle(userMongo.getTitle());
         user.setPreferredLanguage(userMongo.getPreferredLanguage());
+        user.setIdentities(userMongo.getIdentities());
+        user.setLastIdentityUsed(userMongo.getLastIdentityUsed());
         user.setAdditionalInformation(userMongo.getAdditionalInformation());
         user.setCreatedAt(userMongo.getCreatedAt());
         user.setUpdatedAt(userMongo.getUpdatedAt());
@@ -352,6 +354,8 @@ public abstract class AbstractUserRepository<T extends UserMongo> extends Abstra
         userMongo.setType(user.getType());
         userMongo.setTitle(user.getTitle());
         userMongo.setPreferredLanguage(user.getPreferredLanguage());
+        userMongo.setIdentities(user.getIdentities());
+        userMongo.setLastIdentityUsed(user.getLastIdentityUsed());
         userMongo.setAdditionalInformation(user.getAdditionalInformation() != null ? new Document(user.getAdditionalInformation()) : new Document());
         userMongo.setCreatedAt(user.getCreatedAt());
         userMongo.setUpdatedAt(user.getUpdatedAt());

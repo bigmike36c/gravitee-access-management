@@ -235,6 +235,8 @@ import {DomainSettingsDictionariesComponent} from "./domain/settings/texts/dicti
 import {DictionariesResolver} from "./resolvers/dictionaries.resolver";
 import {DomainSettingsThemeComponent} from './domain/settings/theme/theme.component';
 import {ThemesResolver} from "./resolvers/themes.resolver";
+import {UserIdentitiesComponent} from "./domain/settings/users/user/identities/identities.component";
+import {UserIdentitiesResolver} from "./resolvers/user-identities.resolver";
 
 let applyOnLabel = (label) => label.toLowerCase().replace(/_/g, ' ');
 
@@ -2166,6 +2168,13 @@ export const routes: Routes = [
                                   devices: UserDevicesResolver,
                                   deviceIdentifiers: DeviceIdentifiersResolver,
                                   consents: ConsentsResolver
+                                }
+                              },
+                              {
+                                path: 'identities',
+                                component: UserIdentitiesComponent,
+                                resolve: {
+                                  identities: UserIdentitiesResolver,
                                 }
                               }
                             ]

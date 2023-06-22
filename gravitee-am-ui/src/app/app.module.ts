@@ -177,6 +177,8 @@ import {UserApplicationsComponent} from './domain/settings/users/user/applicatio
 import {UserApplicationComponent} from './domain/settings/users/user/applications/application/application.component';
 import {AddUserRolesComponent, UserRolesComponent} from './domain/settings/users/user/roles/roles.component';
 import {UserFactorsComponent} from './domain/settings/users/user/factors/factors.component';
+import {UserIdentitiesComponent} from './domain/settings/users/user/identities/identities.component';
+import {UserIdentitiesResolver} from './resolvers/user-identities.resolver';
 import {UserCredentialsComponent} from './domain/settings/users/user/credentials/credentials.component';
 import {UserCredentialComponent} from './domain/settings/users/user/credentials/credential/credential.component';
 import {UserCredentialsResolver} from './resolvers/user-credentials.resolver';
@@ -547,6 +549,7 @@ import {FormTemplateFactoryService} from "./services/form.template.factory.servi
     UserApplicationComponent,
     UserRolesComponent,
     UserFactorsComponent,
+    UserIdentitiesComponent,
     UserCredentialsComponent,
     UserCredentialComponent,
     UserDevicesComponent,
@@ -744,6 +747,7 @@ import {FormTemplateFactoryService} from "./services/form.template.factory.servi
     UserCredentialsResolver,
     UserCredentialResolver,
     UserDevicesResolver,
+    UserIdentitiesResolver,
     ExtensionGrantsResolver,
     ExtensionGrantResolver,
     ScopesResolver,
