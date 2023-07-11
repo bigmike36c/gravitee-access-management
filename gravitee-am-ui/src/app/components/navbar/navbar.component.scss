@@ -1,5 +1,5 @@
 @use 'sass:map';
-@use '@gravitee/ui-particles-angular' as gio;
+@use '../../../../node_modules/@gravitee/ui-particles-angular' as gio;
 
 :host {
   ::ng-deep.gio-top-bar {
